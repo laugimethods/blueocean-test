@@ -11,6 +11,8 @@ pipeline {
                         echo 'Bonjour le monde'
                     }
                 )
+            }
+        }
         stage('End') {
             steps {
                 echo 'The END'
