@@ -6,7 +6,7 @@ pipeline {
                 parallel (
                     "english" : {
                         echo 'Hello World'
-                    }
+                    },
                     "francais" : {
                         echo 'Bonjour le monde'
                     }
