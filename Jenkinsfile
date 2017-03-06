@@ -6,6 +6,14 @@ pipeline {
                 echo 'Start'
             }
         }
+        stage(‘None’) {
+            when {
+                branch ‘*/none’
+            }
+            steps {
+                echo 'NONE World'
+            }
+        }
         stage('Example') {
             steps {
                 parallel (
