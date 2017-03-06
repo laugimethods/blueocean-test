@@ -10,7 +10,8 @@ pipeline {
                     "francais" : {
                         echo 'Bonjour le monde'
                     }
-                )
+                ),
+                echo 'The END'
             }
         }
     }
