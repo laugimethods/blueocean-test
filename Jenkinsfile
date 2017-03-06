@@ -14,6 +14,14 @@ pipeline {
                 echo 'NONE World'
             }
         }
+        stage('Master') {
+            when {
+                branch '*/master'
+            }
+            steps {
+                echo 'Master Branch'
+            }
+        }
         stage('Example') {
             steps {
                 parallel (
