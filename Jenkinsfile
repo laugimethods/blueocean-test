@@ -4,8 +4,12 @@ pipeline {
         stage('Example') {
             steps {
                 parallel (
-                    echo 'Hello World'
-                    echo 'Bonjour le monde'
+                    "english" : {
+                        echo 'Hello World'
+                    }
+                    "francais" : {
+                        echo 'Bonjour le monde'
+                    }
                 )
             }
         }
