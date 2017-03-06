@@ -6,9 +6,9 @@ pipeline {
                 echo 'Start'
             }
         }
-        stage(‘None’) {
+        stage('None') {
             when {
-                branch ‘*/none’
+                branch '*/none'
             }
             steps {
                 echo 'NONE World'
